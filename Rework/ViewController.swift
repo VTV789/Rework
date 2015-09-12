@@ -16,8 +16,7 @@ class ViewController: UIViewController {
 
     @IBAction func experiment() {
         
-        let image = UIImage()
-        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        let controller = UIActivityViewController()
         self.presentViewController(controller, animated: true, completion: nil)
     }
 }
