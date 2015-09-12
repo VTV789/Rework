@@ -16,7 +16,10 @@ class ViewController: UIViewController {
 
     @IBAction func experiment() {
         
-        let controller = UIActivityViewController()
+        let controller = UIAlertController()
+        controller.title = "Test alert"
+        controller.message = "This is a test"
+        
         self.presentViewController(controller, animated: true, completion: nil)
     }
 }
