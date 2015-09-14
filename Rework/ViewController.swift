@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         controller.title = "Test alert"
         controller.message = "This is a test"
         
+        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default) { action in self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        
+        controller.addAction(okAction)
         self.presentViewController(controller, animated: true, completion: nil)
     }
 }
